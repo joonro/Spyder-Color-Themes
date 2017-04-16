@@ -1,0 +1,46 @@
+# Created 2017-04-15 Sat 18:37
+#+TITLE: Color Schemes for Spyder
+#+AUTHOR: Joon Ro
+Color schemes for [[https://github.com/spyder-ide/spyder][Spyder]].
+
+* Theme List
+- Github
+- Tomorrow
+
+* How to install
+1. With Spyder closed, open =~/.spyder-py3/spyder.ini=.
+2. Find =[color_schemes]= section. Add =ColorSchemeName= to the names list. For example:
+
+   #+BEGIN_SRC ini
+      [color_schemes]
+      names = ['emacs', 'idle', 'monokai', 'pydev', 'scintilla', 'solarized/dark', 'solarized/light', 'spyder', 'spyder/dark', 'tomorrow', 'zenburn']
+   #+END_SRC
+
+3. Append the color scheme settings to the end of =[color_schemes]= section. For example:
+
+   #+BEGIN_SRC ini
+      ...
+      custom_names = []
+      solarized/light/occurrence = #ffff99
+      solarized/dark/occurrence = #ffff99
+      tomorrow/name = Tomorrow
+      tomorrow/background = '#fafafa'
+      tomorrow/currentline = '#efefef'
+      tomorrow/occurrence = '#d6d6d6'
+      tomorrow/ctrlclick = '#4271ae'
+      tomorrow/sideareas = '#efefef'
+      tomorrow/matched_p = '#d6d6d6'
+      tomorrow/unmatched_p = '#ff9999'
+      tomorrow/normal = ('#4d4d4c', False, False)
+      tomorrow/keyword = ('#8959a8', False, False)
+      tomorrow/builtin = ('#c82829', False, False)
+      tomorrow/definition = ('#4d4d4c ', True, False)
+      tomorrow/comment = ('#8e908c', False, True)
+      tomorrow/string = ('#718c00', False, False)
+      tomorrow/number = ('#f5871f', False, False)
+      tomorrow/instance = ('#3e999f', False, True)
+      tomorrow/currentcell = '#ffffff'
+   #+END_SRC
+
+4. The new color scheme will be available in the =Tools= -> =Preferences=
+   -> =Syntax coloring=.
