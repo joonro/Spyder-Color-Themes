@@ -8,6 +8,7 @@ Color schemes for [[https://github.com/spyder-ide/spyder][Spyder]].
 - [[https://github.com/chriskempson/tomorrow-theme][Tomorrow theme]]:
   - Tomorrow
   - Tomorrow Night
+- Atom One Dark (based on [[https://atom.io/][Github's Atom Text Editor]])
 
 * How to install
 1. With Spyder closed, open =~/.spyder-py3/spyder.ini=.
