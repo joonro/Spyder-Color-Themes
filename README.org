@@ -8,17 +8,20 @@ Color schemes for [[https://github.com/spyder-ide/spyder][Spyder]].
 - [[https://github.com/chriskempson/tomorrow-theme][Tomorrow theme]]:
   - Tomorrow
   - Tomorrow Night
+- Atom One Dark (based on [[https://atom.io/][Github's Atom Text Editor]])
 
 * How to install
-1. With Spyder closed, open =~/.spyder-py3/spyder.ini=.
-2. Find =[color_schemes]= section. Add =ColorSchemeName= to the names list. For example:
+1. Choose one of the themes in this repository according to the theme list above.
+2. Locate the theme's =ColorSchemeName.ini= file in this repository. For example, =tomorrow.ini=.
+3. With Spyder closed, open =~/.spyder-py3/spyder.ini=.
+4. Find =[color_schemes]= section. Add =ColorSchemeName= to the names list. For example:
 
    #+BEGIN_SRC ini
       [color_schemes]
       names = ['emacs', 'idle', 'monokai', 'pydev', 'scintilla', 'solarized/dark', 'solarized/light', 'spyder', 'spyder/dark', 'tomorrow', 'zenburn']
    #+END_SRC
 
-3. Append the color scheme settings to the end of =[color_schemes]= section. For example:
+5. Append your chosen color scheme settings from the =ColorSchemeName.ini= file in this repositiory to the end of =[color_schemes]= section. For example:
 
    #+BEGIN_SRC ini
       ...
@@ -44,5 +47,5 @@ Color schemes for [[https://github.com/spyder-ide/spyder][Spyder]].
       tomorrow/currentcell = '#ffffff'
    #+END_SRC
 
-4. The new color scheme will be available in the =Tools= -> =Preferences=
+6. The new color scheme will be available in the =Tools= -> =Preferences=
    -> =Syntax coloring=.
